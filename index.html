@@ -6,7 +6,6 @@
     <title>Holdings 4 Land | Affordable Vacant Land</title>
     
     <style>
-        /* הגדרות כלליות */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -17,18 +16,16 @@
             background-color: #fcfcfc;
         }
 
-        /* כותרת ולוגו */
         header {
             text-align: center;
             padding: 20px 0 40px 0;
         }
 
         header img {
-            max-width: 250px; /* גודל הלוגו שלך */
+            max-width: 250px; 
             height: auto;
         }
 
-        /* תמונת נושא - מרחב פתוח ועצים */
         .hero-img {
             width: 100%;
             height: 450px;
@@ -50,7 +47,6 @@
             margin-top: 30px;
         }
 
-        /* כפתור הנעה לפעולה */
         .cta-button {
             display: inline-block;
             background: #16a085;
@@ -70,7 +66,6 @@
             transform: translateY(-2px);
         }
 
-        /* עיצוב הטופס */
         form {
             background: white;
             padding: 35px;
@@ -87,10 +82,7 @@
             color: #444;
         }
 
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea {
+        input, input[type="email"], input[type="tel"], textarea {
             width: 100%;
             padding: 12px 15px;
             margin-bottom: 20px;
@@ -110,14 +102,8 @@
             width: 100%;
             font-size: 1.1em;
             font-weight: bold;
-            transition: background 0.3s;
         }
 
-        button[type="submit"]:hover {
-            background: #1a5bb8;
-        }
-
-        /* תיבת פרטיות SMS */
         .privacy-box {
             margin-top: 50px;
             padding: 25px;
@@ -126,12 +112,6 @@
             border-left: 5px solid #16a085;
         }
 
-        .privacy-box h3 {
-            margin-top: 0;
-            color: #16a085;
-        }
-
-        /* פוטר */
         footer {
             text-align: center;
             margin-top: 60px;
@@ -141,12 +121,6 @@
             font-size: 0.9em;
         }
 
-        footer a {
-            color: #2c7be5;
-            text-decoration: none;
-        }
-
-        /* התאמה לניידים */
         @media (max-width: 600px) {
             .hero-img { height: 250px; }
             body { padding: 15px; }
@@ -157,74 +131,49 @@
 <body>
 
     <header>
-        <!-- כאן מופיע הלוגו שלך מהתיקייה המקומית -->
-        <img src="logo.png" alt="Holdings 4 Land Logo">
+        <!-- שיניתי כאן את שם הקובץ למה שמופיע אצלך ב-GitHub -->
+        <img src="image (1).png" alt="Holdings 4 Land Logo">
     </header>
 
-    <!-- תמונת נושא: מרחב פתוח, דשא ועצים (לא הררי) -->
-    <img src="https://images.unsplash.com" alt="Beautiful open land with trees" class="hero-img">
+    <img src="https://images.unsplash.com" alt="Beautiful open land" class="hero-img">
 
     <h1>Welcome to Holdings 4 Land</h1>
 
-    <p>
-        We specialize in <strong>affordable vacant land opportunities</strong> across the United States. 
-        Whether you are looking for a long-term investment, a place for recreation, or your future homesite, 
-        our goal is to make land ownership simple and accessible for everyone.
-    </p>
+    <p>We specialize in <strong>affordable vacant land opportunities</strong> across the United States. Our goal is to help buyers find accessible land for investment, recreation, or future development.</p>
 
     <h2>What We Offer</h2>
     <ul>
-        <li>Hand-picked vacant land opportunities at wholesale prices.</li>
-        <li>Small and medium parcels ideal for building, camping, or holding.</li>
-        <li>Properties in high-demand counties across the country.</li>
-        <li>A transparent and straightforward purchase process.</li>
+        <li>Affordable vacant land opportunities</li>
+        <li>Small and medium parcels for building, recreation, or investment</li>
+        <li>Land in multiple counties across the United States</li>
+        <li>Simple purchase process</li>
     </ul>
 
-    <!-- קישור לדף הנכסים שלך -->
-    <a href="land-for-sale.html" class="cta-button">
-        View Available Land For Sale
-    </a>
+    <a href="land-for-sale.html" class="cta-button">View Available Land For Sale</a>
 
     <h2 id="contact">Request Property Information</h2>
-    <p>Fill out the form below to get more details about our available properties or to join our VIP buyers list.</p>
-
     <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="John Doe" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
-
-        <label for="message">Message (Optional)</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us which area or type of land you are interested in..."></textarea>
-
-        <p style="font-size: 0.85em; color: #777; margin-bottom: 20px;">
-            By submitting this form, you agree to receive SMS messages from <strong>Holdings 4 Land</strong>. 
-            Message and data rates may apply. Reply STOP to opt-out at any time.
-        </p>
-
+        <label>Full Name</label>
+        <input type="text" placeholder="John Doe" required>
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com" required>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="(555) 000-0000" required>
+        <label>Message</label>
+        <textarea rows="4" placeholder="Tell us what you are looking for..."></textarea>
+        <p style="font-size: 0.85em; color: #777;">By submitting this form you agree to receive SMS messages. Reply STOP to opt-out.</p>
         <button type="submit">Submit Request</button>
     </form>
 
     <div class="privacy-box">
         <h3>SMS Privacy Policy & Terms</h3>
-        <p>
-            By providing your phone number, you consent to receive SMS messages from <strong>Holdings 4 Land</strong>. 
-            These messages may include property updates, availability alerts, or responses to your inquiries.
-        </p>
-        <p>
-            <strong>Privacy Commitment:</strong> Your personal information and SMS consent will <strong>NOT</strong> be shared, rented, or sold to third parties for marketing purposes.
-        </p>
+        <p>By providing your phone number, you consent to receive SMS messages from <strong>Holdings 4 Land</strong>.</p>
+        <p><strong>Privacy:</strong> Your information will NOT be shared or sold to third parties.</p>
     </div>
 
     <footer>
-        <p>Email: <a href="mailto:info@holdings4land.com">info@holdings4land.com</a></p>
-        <p>
-            <a href="privacy-policy.html">Privacy Policy</a> | © 2024 Holdings 4 Land
-        </p>
+        <p>Email: info@holdings4land.com</p>
+        <p>© 2024 Holdings 4 Land</p>
     </footer>
 
 </body>
