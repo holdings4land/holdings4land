@@ -1,106 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land For Sale | Holdings 4 Land</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
 
-<title>Land For Sale | Holdings 4 Land</title>
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
 
-<style>
+        header img {
+            max-width: 200px;
+        }
 
-body{
-font-family:sans-serif;
-max-width:900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
-color:#333;
-}
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-header{
-text-align:center;
-margin-bottom:30px;
-}
+        nav a {
+            text-decoration: none;
+            color: #16a085;
+            font-weight: bold;
+            margin: 0 15px;
+        }
 
-header img{
-width:220px;
-}
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
 
-.property{
-border:1px solid #ddd;
-padding:25px;
-border-radius:10px;
-margin-top:30px;
-}
+        /* עיצוב כרטיסי נכסים */
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
 
-.price{
-font-size:28px;
-color:#16a085;
-font-weight:bold;
-}
+        .property-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
 
-img{
-width:100%;
-border-radius:8px;
-margin-top:20px;
-}
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
 
-button{
-background:#2c7be5;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-cursor:pointer;
-}
+        .property-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-</style>
+        .property-info {
+            padding: 20px;
+        }
 
+        .property-info h3 {
+            margin-top: 0;
+            color: #16a085;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-<img src="logo.png">
+    <a href="index.html">
+        <img src="logo.png" alt="Holdings 4 Land Logo">
+    </a>
 </header>
 
-<h1>Land For Sale</h1>
+<nav>
+    <a href="index.html">← Back to Home</a>
+</nav>
 
-<div class="property">
+<h1>Available Land Opportunities</h1>
 
-<h2>0.22 Acre Lot – Shoreline Park</h2>
+<div class="property-grid">
+    <!-- נכס לדוגמה 1 -->
+    <div class="property-card">
+        <img src="https://images.unsplash.com" class="property-img">
+        <div class="property-info">
+            <h3>5 Acres in Colorado</h3>
+            <p>Beautiful flat land, perfect for off-grid living or investment.</p>
+            <p class="price">$14,900</p>
+            <a href="index.html#contact" style="color: #2c7be5; text-decoration: none; font-weight: bold;">Inquire Now →</a>
+        </div>
+    </div>
 
-<img src="property1.jpg">
+    <!-- נכס לדוגמה 2 -->
+    <div class="property-card">
+        <img src="https://images.unsplash.com" class="property-img">
+        <div class="property-info">
+            <h3>Residential Lot in Florida</h3>
+            <p>Ready to build your dream home in a growing community.</p>
+            <p class="price">$8,500</p>
+            <a href="index.html#contact" style="color: #2c7be5; text-decoration: none; font-weight: bold;">Inquire Now →</a>
+        </div>
+    </div>
+</div>
 
-<p class="price">$3,999</p>
-
-<p>
-Beautiful wooded lot located in Shoreline Park, Mississippi.
-Perfect for investment, recreation, or future development.
-</p>
-
-<ul>
-
-<li><strong>Parcel Number:</strong> 138L033036000</li>
-
-<li><strong>Size:</strong> 0.22 Acre</li>
-
-<li><strong>Location:</strong> Artic St, Shoreline Park, MS</li>
-
-<li><strong>County:</strong> Hancock County</li>
-
-<li><strong>State:</strong> Mississippi</li>
-
-</ul>
-
-<h3>Interested in this property?</h3>
-
-<p>Fill out the form on our website or contact us for more details.</p>
-
-<a href="index.html">
-<button>Back to Home</button>
-</a>
-
+<div class="footer">
+    <hr>
+    <p>© 2024 Holdings 4 Land | <a href="index.html">Home</a></p>
 </div>
 
 </body>
