@@ -5,70 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holdings 4 Land | Affordable Vacant Land</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0 40px 0; }
         header img { max-width: 280px; height: auto; }
-        .hero-container { position: relative; width: 100%; height: 450px; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .hero-img { width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: block; }
         h1 { color: #1e293b; border-bottom: 4px solid #16a085; padding-bottom: 10px; margin-top: 40px; font-size: 2.5em; }
-        p { font-size: 1.1em; color: #475569; }
         .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; margin: 30px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); }
         .cta-button:hover { background: #13856e; transform: translateY(-3px); }
         form { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; margin-top: 30px; }
-        label { display: block; margin-bottom: 10px; font-weight: 700; color: #1e293b; }
-        input, textarea { width: 100%; padding: 14px; margin-bottom: 25px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
-        button[type="submit"] { background: #2563eb; color: white; padding: 18px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 1.2em; font-weight: bold; transition: 0.3s; }
-        button[type="submit"]:hover { background: #1d4ed8; }
+        input, textarea { width: 100%; padding: 14px; margin-bottom: 25px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; }
+        button[type="submit"] { background: #2563eb; color: white; padding: 18px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1.2em; font-weight: bold; }
         .privacy-box { margin-top: 60px; padding: 30px; background: #f1f5f9; border-radius: 12px; border-left: 6px solid #16a085; }
         footer { text-align: center; margin-top: 80px; padding: 40px 20px; border-top: 1px solid #e2e8f0; color: #64748b; }
-        @media (max-width: 600px) { .hero-container { height: 280px; } h1 { font-size: 1.8em; } }
     </style>
 </head>
 <body>
 
     <header>
-        <!-- הלוגו שלך - וודאתי שזה השם שמופיע אצלך ב-GitHub -->
         <img src="logo.png.png" alt="Holdings 4 Land Logo">
     </header>
 
-    <div class="hero-container">
-        <!-- תמונת נוף פתוחה (יער/אחו) ללא הרים - קישור ישיר שעובד תמיד -->
-        <img src="https://images.unsplash.com" alt="Beautiful open green land" class="hero-img">
-    </div>
+    <!-- תמונת נוף פתוחה בקישור ישיר שעובד תמיד -->
+    <img src="https://images.unsplash.com" alt="Beautiful open land" class="hero-img">
 
     <h1>Welcome to Holdings 4 Land</h1>
     <p>We specialize in <strong>affordable vacant land opportunities</strong> across the United States. Our goal is to help buyers find accessible land for investment, recreation, or future development.</p>
 
-    <!-- כפתור מעבר לדף הנכסים -->
     <a href="land-for-sale.html" class="cta-button">View Available Land For Sale</a>
 
     <h2 id="contact">Contact Our Team</h2>
-    <p>Interested in a property? Fill out the form below and we'll get back to you shortly.</p>
-    
     <form>
-        <label>Full Name</label>
+        <label style="font-weight:bold; display:block; margin-bottom:5px;">Full Name</label>
         <input type="text" placeholder="John Doe" required>
-        <label>Email Address</label>
+        <label style="font-weight:bold; display:block; margin-bottom:5px;">Email Address</label>
         <input type="email" placeholder="john@example.com" required>
-        <label>Phone Number</label>
+        <label style="font-weight:bold; display:block; margin-bottom:5px;">Phone Number</label>
         <input type="tel" placeholder="(555) 000-0000" required>
-        <label>Message</label>
-        <textarea rows="5" placeholder="How can we help you find the right land?"></textarea>
-        <p style="font-size: 0.85em; color: #64748b; margin-bottom: 20px;">
-            By submitting this form you agree to receive SMS messages from Holdings 4 Land. Reply STOP to opt-out.
-        </p>
+        <label style="font-weight:bold; display:block; margin-bottom:5px;">Message</label>
+        <textarea rows="5" placeholder="How can we help you?"></textarea>
         <button type="submit">Send Message</button>
     </form>
 
     <div class="privacy-box">
         <h3>SMS Privacy Policy & Terms</h3>
-        <p>By providing your phone number, you consent to receive SMS messages from <strong>Holdings 4 Land</strong> regarding property updates and inquiries.</p>
-        <p><strong>Privacy:</strong> Your personal information will <strong>NOT</strong> be shared or sold to third parties for marketing purposes.</p>
+        <p>By providing your phone number, you consent to receive SMS messages from <strong>Holdings 4 Land</strong>. Reply STOP to opt-out.</p>
     </div>
 
     <footer>
-        <p>Email: <a href="mailto:info@holdings4land.com" style="color: #2563eb; text-decoration: none;">info@holdings4land.com</a></p>
-        <p>© 2026 Holdings 4 Land | Affordable Vacant Land Specialists</p>
+        <p>Email: info@holdings4land.com</p>
+        <p>© 2026 Holdings 4 Land</p>
     </footer>
 
 </body>
