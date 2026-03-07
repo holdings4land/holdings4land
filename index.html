@@ -8,8 +8,7 @@
         body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0 40px 0; }
         header img { max-width: 280px; height: auto; }
-        <img src="https://images.unsplash.com" class="hero-img" alt="Landscape">
-
+        .hero-img { width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: block; }
         h1 { color: #1e293b; border-bottom: 4px solid #16a085; padding-bottom: 10px; margin-top: 40px; font-size: 2.5em; }
         .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; margin: 30px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); }
         .cta-button:hover { background: #13856e; transform: translateY(-3px); }
@@ -18,6 +17,7 @@
         button[type="submit"] { background: #2563eb; color: white; padding: 18px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1.2em; font-weight: bold; }
         .privacy-box { margin-top: 60px; padding: 30px; background: #f1f5f9; border-radius: 12px; border-left: 6px solid #16a085; }
         footer { text-align: center; margin-top: 80px; padding: 40px 20px; border-top: 1px solid #e2e8f0; color: #64748b; }
+        footer a { color: #2563eb; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -26,11 +26,11 @@
         <img src="logo.png.png" alt="Holdings 4 Land Logo">
     </header>
 
-    <!-- תמונת נוף פתוחה בקישור ישיר שעובד תמיד -->
-    <img src="https://images.unsplash.com" alt="Beautiful open land" class="hero-img">
+    <!-- שימוש בתמונה הראשונה שלך כנוף הראשי -->
+    <img src="land1.png" alt="Beautiful open land" class="hero-img">
 
     <h1>Welcome to Holdings 4 Land</h1>
-    <p>We specialize in <strong>affordable vacant land opportunities</strong> across the United States. Our goal is to help buyers find accessible land for investment, recreation, or future development.</p>
+    <p>We specialize in <strong>affordable vacant land opportunities</strong> across the United States. Find your next investment today.</p>
 
     <a href="land-for-sale.html" class="cta-button">View Available Land For Sale</a>
 
@@ -53,8 +53,8 @@
     </div>
 
     <footer>
-        <p>Email: info@holdings4land.com</p>
-        <p>© 2026 Holdings 4 Land</p>
+        <p>Email: <a href="mailto:info@holdings4land.com">info@holdings4land.com</a></p>
+        <p>© 2025 Holdings 4 Land</p>
     </footer>
 
 </body>
