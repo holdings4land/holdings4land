@@ -5,100 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Land For Sale | Holdings 4 Land</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 1100px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
-        header { text-align: center; padding: 20px 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 1100px; margin: auto; padding: 20px; color: #333; background-color: #f8fafc; }
+        header { text-align: center; padding: 30px 0; }
         header img { max-width: 250px; height: auto; }
-        nav { text-align: center; margin-bottom: 30px; }
-        nav a { text-decoration: none; color: #16a085; font-weight: bold; font-size: 1.1em; }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 40px; border-bottom: 2px solid #16a085; padding-bottom: 10px; }
-        
-        /* סידור המודעות בשורה */
-        .property-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
-            padding: 20px 0; 
-        }
-        
-        .property-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.1); border: 1px solid #eee; display: flex; flex-direction: column; }
-        .property-img { width: 100%; height: 220px; object-fit: cover; }
-        .property-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
-        .property-info h3 { margin: 0 0 10px 0; color: #16a085; font-size: 1.3em; }
-        .property-details { color: #555; font-size: 0.95em; flex-grow: 1; }
-        .price { font-size: 1.5em; font-weight: bold; color: #e67e22; display: block; margin: 15px 0; }
-        .contact-link { display: block; text-align: center; background: #2c7be5; color: white; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; }
-        
-        footer { text-align: center; margin-top: 60px; padding: 20px; color: #7f8c8d; border-top: 1px solid #eee; }
-        
-        @media (max-width: 600px) { .property-grid { grid-template-columns: 1fr; } }
+        nav { text-align: center; margin-bottom: 40px; }
+        nav a { text-decoration: none; color: #16a085; font-weight: bold; padding: 10px 25px; border: 2px solid #16a085; border-radius: 30px; transition: 0.3s; }
+        nav a:hover { background: #16a085; color: white; }
+        h1 { text-align: center; color: #1e293b; margin-bottom: 40px; font-size: 2.2em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 230px; object-fit: cover; background-color: #f1f5f9; }
+        .info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .info h3 { margin: 0 0 12px 0; color: #16a085; font-size: 1.4em; }
+        .price { font-size: 1.7em; font-weight: 800; color: #2c3e50; display: block; margin: 20px 0; }
+        .contact-link { display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 14px; border-radius: 10px; font-weight: bold; }
+        footer { text-align: center; margin-top: 80px; padding: 40px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
 
 <header>
     <a href="index.html">
-        <!-- וודאי ששם הקובץ ב-GitHub הוא בדיוק logo.png -->
-        <img src="logo.png" alt="Holdings 4 Land Logo">
+        <!-- שיניתי כאן ל-logo.png.png כדי שיתאים בדיוק למה שהעלית עכשיו -->
+        <img src="logo.png.png" alt="Holdings 4 Land Logo">
     </a>
 </header>
 
 <nav>
-    <a href="index.html">← Back to Home</a>
+    <a href="index.html">← Back to Home Page</a>
 </nav>
 
-<h1>Available Land Opportunities</h1>
+<h1>Available Properties</h1>
 
-<div class="property-grid">
+<div class="grid">
     
-    <!-- מודעה 1: הנכס המקורי שלך -->
-    <div class="property-card">
-        <img src="land-image.jpg.png" class="property-img" alt="Land in Mississippi">
-        <div class="property-info">
+    <!-- מודעה 1: הנכס שלך במיסיסיפי -->
+    <div class="card">
+        <img src="land-image.jpg.png" alt="Mississippi Land">
+        <div class="info">
             <h3>0.23 Acres in Shoreline Park</h3>
-            <div class="property-details">
-                <p><strong>Address:</strong> Artic St, Shoreline Park</p>
-                <p><strong>County:</strong> Hancock County, MS</p>
-                <p>Great opportunity to own a beautiful lot in Mississippi. Peaceful surroundings with easy access.</p>
-            </div>
+            <p style="flex-grow: 1; color: #64748b;">
+                <strong>Location:</strong> Artic St, Shoreline Park<br>
+                <strong>County:</strong> Hancock County, MS<br><br>
+                Beautiful level lot in a quiet residential area. Ready for investment or future building.
+            </p>
             <span class="price">$3,999</span>
             <a href="index.html#contact" class="contact-link">Inquire Now</a>
         </div>
     </div>
 
-    <!-- מודעה 2: נכס דומה חדש -->
-    <div class="property-card">
-        <img src="https://images.unsplash.com" class="property-img" alt="Vacant Land">
-        <div class="property-info">
-            <h3>0.25 Acres Near Shoreline</h3>
-            <div class="property-details">
-                <p><strong>Address:</strong> Baltic St, Shoreline Park</p>
-                <p><strong>County:</strong> Hancock County, MS</p>
-                <p>Level terrain, partially cleared, and ready for your vision. Excellent investment potential.</p>
-            </div>
+    <!-- מודעה 2 -->
+    <div class="card">
+        <img src="https://images.unsplash.com" alt="Vacant Land">
+        <div class="info">
+            <h3>0.25 Acres Residential Lot</h3>
+            <p style="flex-grow: 1; color: #64748b;">
+                <strong>Location:</strong> Baltic St, Shoreline Park<br>
+                <strong>County:</strong> Hancock County, MS<br><br>
+                Excellent investment opportunity. Clean title and easy access to local amenities.
+            </p>
             <span class="price">$4,500</span>
-            <a href="index.html#contact" class="contact-link">Inquire Now</a>
+            <a href="index.html#contact" class="btn">Inquire Now</a>
         </div>
     </div>
 
-    <!-- מודעה 3: נכס דומה חדש -->
-    <div class="property-card">
-        <img src="https://images.unsplash.com" class="property-img" alt="Open Lot">
-        <div class="property-info">
+    <!-- מודעה 3 -->
+    <div class="card">
+        <img src="https://images.unsplash.com" alt="Open Lot">
+        <div class="info">
             <h3>0.30 Acres Wooded Lot</h3>
-            <div class="property-details">
-                <p><strong>Address:</strong> Caspian St, Shoreline Park</p>
-                <p><strong>County:</strong> Hancock County, MS</p>
-                <p>A spacious lot with mature trees. Ideal for recreation or long-term land holding.</p>
-            </div>
+            <p style="flex-grow: 1; color: #64748b;">
+                <strong>Location:</strong> Caspian St, Shoreline Park<br>
+                <strong>County:</strong> Hancock County, MS<br><br>
+                Spacious wooded parcel offering privacy and natural beauty at a wholesale price.
+            </p>
             <span class="price">$4,500</span>
-            <a href="index.html#contact" class="contact-link">Inquire Now</a>
+            <a href="index.html#contact" class="btn">Inquire Now</a>
         </div>
     </div>
 
 </div>
 
 <footer>
-    <p>© 2024 Holdings 4 Land | <a href="index.html" style="color: #16a085;">Home</a></p>
+    <p>© 2026 Holdings 4 Land | <a href="index.html" style="color: #16a085; text-decoration: none;">Home</a></p>
 </footer>
 
 </body>
