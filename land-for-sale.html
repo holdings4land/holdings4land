@@ -9,53 +9,69 @@
         header { text-align: center; padding: 30px 0; }
         header img { max-width: 250px; height: auto; }
         nav { text-align: center; margin-bottom: 40px; }
-        nav a { text-decoration: none; color: #16a085; font-weight: bold; padding: 10px 25px; border: 2px solid #16a085; border-radius: 30px; }
-        h1 { text-align: center; color: #1e293b; margin-bottom: 40px; }
+        nav a { text-decoration: none; color: #16a085; font-weight: bold; padding: 10px 25px; border: 2px solid #16a085; border-radius: 30px; transition: 0.3s; }
+        nav a:hover { background: #16a085; color: white; }
+        h1 { text-align: center; color: #1e293b; margin-bottom: 40px; font-size: 2.2em; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; display: flex; flex-direction: column; }
-        .property-img { width: 100%; height: 240px; object-fit: cover; background-color: #eee; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .property-img { width: 100%; height: 240px; object-fit: cover; background-color: #f1f5f9; }
         .info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
-        .price { font-size: 1.8em; font-weight: 800; color: #2c3e50; display: block; margin: 20px 0; }
+        .info h3 { margin: 0 0 12px 0; color: #16a085; font-size: 1.4em; }
+        .price { font-size: 1.7em; font-weight: 800; color: #2c3e50; display: block; margin: 20px 0; }
         .contact-link { display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 14px; border-radius: 10px; font-weight: bold; }
-        footer { text-align: center; margin-top: 60px; padding: 40px; border-top: 1px solid #eee; }
+        footer { text-align: center; margin-top: 80px; padding: 40px; color: #94a3b8; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
-<header><a href="index.html"><img src="logo.png.png" alt="Logo"></a></header>
-<nav><a href="index.html">← Back Home</a></nav>
+
+<header>
+    <a href="index.html">
+        <img src="logo.png.png" alt="Holdings 4 Land Logo">
+    </a>
+</header>
+
+<nav><a href="index.html">← Back to Home Page</a></nav>
+
 <h1>Available Properties</h1>
+
 <div class="grid">
-    <!-- מודעה 1: מיסיסיפי -->
+    <!-- מודעה 1: הנכס שלך במיסיסיפי -->
     <div class="card">
-        <img src="land-image.jpg.png" class="property-img" alt="MS Land">
+        <!-- שימוש בשם הקובץ החדש שהעלית -->
+        <img src="land1.png" class="property-img" alt="Mississippi Land">
         <div class="info">
             <h3>0.23 Acres in Shoreline Park</h3>
-            <p>Artic St, Hancock County, MS. Peaceful residential area.</p>
+            <p style="flex-grow:1;"><strong>Location:</strong> Artic St, Shoreline Park, MS. Peaceful residential area ready for investment.</p>
             <span class="price">$3,999</span>
             <a href="index.html#contact" class="contact-link">Inquire Now</a>
         </div>
     </div>
+
     <!-- מודעה 2 -->
     <div class="card">
-        <img src="https://images.unsplash.com" class="property-img" alt="Land 2">
+        <img src="https://images.unsplash.com" class="property-img" alt="Vacant Land">
         <div class="info">
             <h3>0.25 Acres Near Shoreline</h3>
-            <p>Baltic St, MS. Great road access and level terrain.</p>
+            <p style="flex-grow:1;"><strong>Location:</strong> Baltic St, MS. Excellent road access and level terrain.</p>
             <span class="price">$4,500</span>
             <a href="index.html#contact" class="contact-link">Inquire Now</a>
         </div>
     </div>
+
     <!-- מודעה 3 -->
     <div class="card">
-        <img src="https://images.unsplash.com" class="property-img" alt="Land 3">
+        <img src="https://images.unsplash.com" class="property-img" alt="Wooded Lot">
         <div class="info">
             <h3>0.30 Acres Wooded Lot</h3>
-            <p>Caspian St, MS. Beautiful parcel with mature trees.</p>
+            <p style="flex-grow:1;"><strong>Location:</strong> Caspian St, MS. Beautiful parcel with mature trees.</p>
             <span class="price">$4,500</span>
             <a href="index.html#contact" class="contact-link">Inquire Now</a>
         </div>
     </div>
 </div>
-<footer><p>© 2026 Holdings 4 Land</p></footer>
+
+<footer><p>© 2026 Holdings 4 Land | info@holdings4land.com</p></footer>
+
 </body>
 </html>
