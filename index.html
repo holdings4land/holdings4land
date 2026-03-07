@@ -11,23 +11,22 @@
         .hero-img { width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: block; }
         h1 { color: #1e293b; border-bottom: 4px solid #16a085; padding-bottom: 10px; margin-top: 40px; font-size: 2.5em; }
         .intro-section { font-size: 1.15em; color: #475569; margin: 25px 0; line-height: 1.8; background: #fff; padding: 20px; border-radius: 10px; border-right: 4px solid #16a085; }
-        .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; margin: 20px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); }
+        
+        .button-group { text-align: center; margin: 40px 0; }
+        
+        .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); margin: 10px; }
         .cta-button:hover { background: #13856e; transform: translateY(-3px); }
         
-        /* עיצוב למסגרת של גוגל פורם */
-        .form-container { 
-            margin-top: 40px; 
-            background: white; 
-            padding: 10px; 
-            border-radius: 15px; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
-            border: 1px solid #e2e8f0;
-            overflow: hidden;
-        }
-        iframe { width: 100%; border: none; min-height: 800px; }
+        /* כפתור הטופס המיוחד */
+        .form-button { background: #2563eb; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); }
+        .form-button:hover { background: #1d4ed8; }
+
+        .contact-info-box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; text-align: center; margin-top: 30px; }
 
         footer { text-align: center; margin-top: 80px; padding: 40px 20px; border-top: 1px solid #e2e8f0; color: #64748b; }
         footer a { color: #2563eb; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 600px) { h1 { font-size: 1.8em; } .hero-img { height: 280px; } .cta-button { width: 100%; box-sizing: border-box; } }
     </style>
 </head>
 <body>
@@ -47,14 +46,15 @@
         <strong>Don't just dream about it—own it.</strong>
     </div>
 
-    <a href="land-for-sale.html" class="cta-button">Browse Available Properties</a>
+    <div class="button-group">
+        <a href="land-for-sale.html" class="cta-button">Browse Available Properties</a>
+        <!-- כפתור חדש שמוביל ישירות לטופס גוגל שלך -->
+        <a href="https://docs.google.com" target="_blank" class="cta-button form-button">Request Property Information</a>
+    </div>
 
-    <h2 id="contact">Request Property Information</h2>
-    <p>Please fill out the official form below to get started:</p>
-
-    <!-- הטמעת הגוגל פורם שלך -->
-    <div class="form-container">
-        <iframe src="https://docs.google.com">Loading…</iframe>
+    <div class="contact-info-box">
+        <h2>Ready to take the next step?</h2>
+        <p>Click the blue button above to fill out our official request form. Our team will review your requirements and get back to you shortly.</p>
     </div>
 
     <footer>
