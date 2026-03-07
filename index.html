@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holdings 4 Land | Affordable Vacant Land</title>
+    <title>Holdings 4 Land | Affordable Vacant Land Ownership</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; color: #333; background-color: #fcfcfc; }
         header { text-align: center; padding: 20px 0 40px 0; }
         header img { max-width: 280px; height: auto; }
         .hero-img { width: 100%; height: 450px; object-fit: cover; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: block; }
+        
         h1 { color: #1e293b; border-bottom: 4px solid #16a085; padding-bottom: 10px; margin-top: 40px; font-size: 2.5em; }
-        .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; margin: 30px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); }
+        
+        /* עיצוב פסקת הפתיחה המזמינה */
+        .intro-section { font-size: 1.15em; color: #475569; margin: 25px 0; line-height: 1.8; background: #fff; padding: 20px; border-radius: 10px; border-right: 4px solid #16a085; }
+        
+        .cta-button { display: inline-block; background: #16a085; color: white; padding: 18px 40px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.25em; margin: 20px 0; transition: 0.3s; box-shadow: 0 4px 15px rgba(22, 160, 133, 0.3); }
         .cta-button:hover { background: #13856e; transform: translateY(-3px); }
+        
+        /* עיצוב הטופס */
         form { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; margin-top: 30px; }
-        input, textarea { width: 100%; padding: 14px; margin-bottom: 25px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; }
-        button[type="submit"] { background: #2563eb; color: white; padding: 18px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1.2em; font-weight: bold; }
+        label { font-weight: bold; display: block; margin-bottom: 8px; color: #1e293b; }
+        input, textarea { width: 100%; padding: 14px; margin-bottom: 25px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        
+        /* תיבת אישור ה-SMS החדשה */
+        .sms-notice-box { font-size: 0.85em; color: #64748b; margin-bottom: 25px; line-height: 1.5; background: #f8fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0; }
+        
+        button[type="submit"] { background: #2563eb; color: white; padding: 18px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1.2em; font-weight: bold; transition: 0.3s; }
+        button[type="submit"]:hover { background: #1d4ed8; }
+        
         .privacy-box { margin-top: 60px; padding: 30px; background: #f1f5f9; border-radius: 12px; border-left: 6px solid #16a085; }
         footer { text-align: center; margin-top: 80px; padding: 40px 20px; border-top: 1px solid #e2e8f0; color: #64748b; }
         footer a { color: #2563eb; text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 600px) { h1 { font-size: 1.8em; } .hero-img { height: 280px; } }
     </style>
 </head>
 <body>
@@ -26,35 +42,53 @@
         <img src="logo.png.png" alt="Holdings 4 Land Logo">
     </header>
 
-    <!-- שימוש בתמונה הראשונה שלך כנוף הראשי -->
     <img src="land1.png" alt="Beautiful open land" class="hero-img">
 
-    <h1>Welcome to Holdings 4 Land</h1>
-    <p>We specialize in <strong>affordable vacant land opportunities</strong> across the United States. Find your next investment today.</p>
+    <h1>Start Your Land Ownership Journey</h1>
+    
+    <!-- פסקת פתיחה מעובה ומזמינה -->
+    <div class="intro-section">
+        At <strong>Holdings 4 Land</strong>, we believe that owning land should be simple, transparent, and affordable for everyone. 
+        Whether you are looking for a long-term investment, a peaceful recreational retreat, or the perfect spot to build your future dreams, 
+        we provide hand-picked vacant land opportunities at wholesale prices across the United States. 
+        <strong>Don't just dream about it—own it.</strong>
+    </div>
 
-    <a href="land-for-sale.html" class="cta-button">View Available Land For Sale</a>
+    <a href="land-for-sale.html" class="cta-button">Browse Available Properties</a>
 
-    <h2 id="contact">Contact Our Team</h2>
+    <h2 id="contact">Get Property Details</h2>
+    <p>Fill out the form below to receive full property information or to join our VIP buyer's list.</p>
+    
     <form>
-        <label style="font-weight:bold; display:block; margin-bottom:5px;">Full Name</label>
-        <input type="text" placeholder="John Doe" required>
-        <label style="font-weight:bold; display:block; margin-bottom:5px;">Email Address</label>
-        <input type="email" placeholder="john@example.com" required>
-        <label style="font-weight:bold; display:block; margin-bottom:5px;">Phone Number</label>
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+        
+        <label>Email Address</label>
+        <input type="email" placeholder="your@email.com" required>
+        
+        <label>Phone Number</label>
         <input type="tel" placeholder="(555) 000-0000" required>
-        <label style="font-weight:bold; display:block; margin-bottom:5px;">Message</label>
-        <textarea rows="5" placeholder="How can we help you?"></textarea>
-        <button type="submit">Send Message</button>
+        
+        <label>How can we help you?</label>
+        <textarea rows="4" placeholder="Tell us about the type of land or specific area you are interested in..."></textarea>
+        
+        <!-- תיבת אישור הודעות טקסט (SMS Opt-in) -->
+        <div class="sms-notice-box">
+            <strong>SMS Consent:</strong> By providing your phone number and clicking submit, you expressly consent to receive property updates, alerts, and marketing messages via SMS from Holdings 4 Land. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to unsubscribe at any time.
+        </div>
+        
+        <button type="submit">Submit Request</button>
     </form>
 
     <div class="privacy-box">
         <h3>SMS Privacy Policy & Terms</h3>
-        <p>By providing your phone number, you consent to receive SMS messages from <strong>Holdings 4 Land</strong>. Reply STOP to opt-out.</p>
+        <p>We value your privacy. By opting in, you agree to receive SMS communications regarding land opportunities. 
+           Your mobile information will <strong>never</strong> be shared, rented, or sold to third parties for marketing purposes.</p>
     </div>
 
     <footer>
         <p>Email: <a href="mailto:info@holdings4land.com">info@holdings4land.com</a></p>
-        <p>© 2025 Holdings 4 Land</p>
+        <p>© 2025 Holdings 4 Land | All Rights Reserved</p>
     </footer>
 
 </body>
