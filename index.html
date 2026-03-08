@@ -6,182 +6,181 @@
 <title>Holdings 4 Land | Affordable Vacant Land Ownership</title>
 <meta name="description" content="Holdings 4 Land helps individuals invest in affordable vacant land across the United States. Browse available properties and request land information easily.">
 
+<!-- Force HTTPS for resources -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
 <style>
 body {
-font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-line-height:1.6;
-max-width:1000px;
-margin:auto;
-padding:20px;
-color:#333;
-background-color:#f4f9f8; /* רקע בהיר, מקצועי */
+  font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.6;
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+  color:#333;
+  background-color:#f4f9f8;
 }
 
 header {
-text-align:center;
-padding:25px 0 15px 0;
+  text-align:center;
+  padding:25px 0 15px 0;
 }
 
 header img {
-max-width:280px;
-height:auto;
+  max-width:280px;
+  height:auto;
 }
 
 .hero-img {
-width:100%;
-height:450px;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-display:block;
-margin-bottom:25px;
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom:30px;
 }
 
-h1 {
-color:#1e293b;
-border-bottom:4px solid #16a085;
-padding-bottom:15px;
-margin-top:40px;
-font-size:2.7em;
-text-align:center;
+.hero-section {
+  text-align:center;
+  margin-bottom:30px;
 }
 
-.intro-section {
-font-size:1.15em;
-color:#2d3748;
-margin:25px 0;
-line-height:1.8;
-background:white;
-padding:25px;
-border-radius:10px;
-border-right:5px solid #16a085;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+.hero-title {
+  font-size:2.7em;
+  color:#1e293b;
+  border-bottom:4px solid #16a085;
+  padding-bottom:15px;
+  margin-bottom:20px;
+}
+
+.hero-subtitle {
+  font-size:1.2em;
+  color:#2d3748;
+  margin-bottom:30px;
+  line-height:1.6;
 }
 
 .button-group {
-text-align:center;
-margin:40px 0;
+  text-align:center;
+  margin-bottom:50px;
 }
 
 .cta-button {
-display:inline-block;
-background:#16a085;
-color:white;
-padding:18px 40px;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-font-size:1.25em;
-transition:0.3s, transform 0.3s;
-box-shadow:0 5px 15px rgba(22,160,133,0.3);
-margin:10px;
+  display:inline-block;
+  background:#16a085;
+  color:white;
+  padding:18px 40px;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:1.25em;
+  transition:0.3s, transform 0.3s;
+  box-shadow:0 5px 15px rgba(22,160,133,0.3);
+  margin:10px;
 }
 
 .cta-button:hover {
-background:#13856e;
-transform:translateY(-3px);
+  background:#13856e;
+  transform:translateY(-3px);
 }
 
 .form-button {
-background:#2563eb;
-box-shadow:0 4px 15px rgba(37,99,235,0.3);
+  background:#2563eb;
+  box-shadow:0 4px 15px rgba(37,99,235,0.3);
 }
 
 .form-button:hover {
-background:#1d4ed8;
+  background:#1d4ed8;
 }
 
 .contact-info-box {
-background:white;
-padding:30px;
-border-radius:15px;
-border:1px solid #e2e8f0;
-text-align:center;
-margin-top:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  border:1px solid #e2e8f0;
+  text-align:center;
+  margin-top:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 .privacy-disclaimer {
-margin-top:50px;
-padding:30px;
-background:#f8fafc;
-border-radius:12px;
-border-left:6px solid #16a085;
-font-size:0.95em;
-color:#475569;
-}
-
-.top-home-button{
-display:block;
-text-align:center;
-margin:20px auto 30px auto;
-background:#16a085;
-color:white;
-padding:14px 30px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-width:240px;
-box-shadow:0 6px 18px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.top-home-button:hover{
-background:#13856e;
-transform:translateY(-2px);
+  margin-top:50px;
+  padding:30px;
+  background:#f8fafc;
+  border-radius:12px;
+  border-left:6px solid #16a085;
+  font-size:0.95em;
+  color:#475569;
 }
 
 footer {
-text-align:center;
-margin-top:80px;
-padding:40px 20px;
-border-top:1px solid #e2e8f0;
-color:#4a5568;
+  text-align:center;
+  margin-top:80px;
+  padding:40px 20px;
+  border-top:1px solid #e2e8f0;
+  color:#4a5568;
 }
 
+.top-home-button{
+  display:block;
+  text-align:center;
+  margin:20px auto 30px auto;
+  background:#16a085;
+  color:white;
+  padding:14px 30px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  width:240px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.top-home-button:hover{
+  background:#13856e;
+  transform:translateY(-2px);
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<a href="index.html">
-<img src="logo.png.png" alt="Holdings 4 Land Logo">
-</a>
+  <a href="index.html">
+    <img src="logo.png.png" alt="Holdings 4 Land Logo">
+  </a>
 </header>
-
-<a href="land-for-sale.html" class="top-home-button">Browse Land Properties →</a>
 
 <img src="land1.png" alt="Beautiful open land" class="hero-img">
 
-<h1>Start Your Land Ownership Journey</h1>
+<div class="hero-section">
+  <div class="hero-title">Start Your Land Ownership Journey</div>
+  <div class="hero-subtitle">
+    Owning a piece of land in the United States has always been a dream for many – a place to call your own, a smart investment, or a spot to escape and enjoy life. At Holdings 4 Land, we make that dream accessible, affordable, and simple. Whether you’re imagining building your future home, securing a long-term investment, or creating a personal getaway, we provide the tools and guidance to make the once-unreachable possible. Start your journey to land ownership today and take the first step toward turning your American dream into reality.
+  </div>
 
-<div class="intro-section">
-At <strong>Holdings 4 Land</strong>, we make land ownership simple, transparent, and affordable. Whether you are looking for a long-term investment, a place for outdoor recreation, or a future home site, our goal is to help you secure your piece of the American dream.
-</div>
-
-<div class="button-group">
-<a href="land-for-sale.html" class="cta-button">Browse Available Properties</a>
-<a href="https://tally.so/r/zxzYk0" target="_blank" class="cta-button form-button">Get Land Information</a>
+  <div class="button-group">
+    <a href="land-for-sale.html" class="cta-button">Browse Available Properties</a>
+    <a href="https://tally.so/r/zxzYk0" target="_blank" class="cta-button form-button">Get Land Information</a>
+  </div>
 </div>
 
 <div class="contact-info-box">
-<h2>Ready to Take the Next Step?</h2>
-<p>
-Click the blue button above to complete our information request form. Our team will review your request and contact you shortly via Email or SMS.
-</p>
+  <h2>Ready to Take the Next Step?</h2>
+  <p>
+    Click the blue button above to complete our information request form. Our team will review your request and contact you shortly via Email or SMS.
+  </p>
 </div>
 
 <div class="privacy-disclaimer">
-<h3>SMS Privacy Policy & Carrier Terms</h3>
-<p>
-By providing your phone number and submitting our information request form, you agree to receive property updates and marketing messages via SMS from <strong>Holdings 4 Land</strong>. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for assistance. Your information will be handled according to our privacy policy and will never be shared with unauthorized third parties.
-</p>
+  <h3>SMS Privacy Policy & Carrier Terms</h3>
+  <p>
+    By providing your phone number and submitting our information request form, you agree to receive property updates and marketing messages via SMS from <strong>Holdings 4 Land</strong>. Consent is not a condition of purchase. Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for assistance. Your information will be handled according to our privacy policy and will never be shared with unauthorized third parties.
+  </p>
 </div>
 
 <footer>
-<p>Contact: info@holdings4land.com</p>
-<p>© 2025 Holdings 4 Land | All Rights Reserved</p>
+  <p>Contact: info@holdings4land.com</p>
+  <p>© 2025 Holdings 4 Land | All Rights Reserved</p>
 </footer>
 
 </body>
