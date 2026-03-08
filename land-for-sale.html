@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Available Land | Holdings 4 Land</title>
 
+<style>
+
+body {
+font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+line-height:1.6;
+max-width:1000px;
+margin:auto;
+padding:20px;
+color:#333;
+background-color:#eef6f5; /* קצת בהיר יותר לרקע */
+}
+
+header {
+text-align:center;
+padding:20px 0;
+}
+
+header img {
+max-width:250px;
+height:auto;
+}
+
+h1 {
+color:#1e293b;
+border-bottom:4px solid #16a085;
+padding-bottom:10px;
+margin:30px 0;
+font-size:2.5em;
+text-align:center;
+}
+
+.top-home-button{
+display:block;
+text-align:center;
+margin:10px auto 30px auto;
+background:#16a085;
+color:white;
+padding:14px 30px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+width:240px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.top-home-button:hover{
+background:#13856e;
+transform:translateY(-2px);
+}
+
+.properties-container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px; /* יותר מרווח בין כרטיסים */
+margin-top:30px;
+}
+
+.property-card {
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,0.08); /* צלליות עדינות יותר */
+border:1px solid #e2e8f0;
+display:flex;
+flex-direction:column;
+transition: transform 0.3s;
+}
+
+.property-card:hover{
+transform: translateY(-5px);
+}
+
+.property-img {
+width:100%;
+height:220px;
+object-fit:cover;
+border-bottom:3px solid #16a085;
+}
+
+.property-content {
+padding:20px;
+flex-grow:1;
+display:flex;
+flex-direction:column;
+}
+
+.property-title {
+font-size:1.45em;
+color:#1e293b;
+margin-bottom:10px;
+font-weight:bold;
+}
+
+.property-price {
+font-size:1.5em;
+color:#16a085;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.cta-button {
+display:block;
+background:#2563eb;
+color:white;
+padding:14px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+text-align:center;
+transition:0.3s, transform 0.3s;
+margin-top:auto;
+box-shadow:0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.cta-button:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
+
+.back-link{
+display:block;
+text-align:center;
+margin:60px 0;
+color:#1e293b;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+margin-top:60px;
+padding:30px;
+border-top:1px solid #e2e8f0;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="index.html">
+<img src="logo.png.png" alt="Holdings 4 Land Logo">
+</a>
+</header>
+
+<a href="index.html" class="top-home-button">← Back to Home</a>
+
+<h1>Available Land Opportunities</h1>
+
+<div class="properties-container">
+
+<div class="property-card">
+<img src="land1.png" alt="Residential land opportunity" class="property-img">
+
+<div class="property-content">
+<div class="property-title">Residential Investment Lot</div>
+
+<div class="property-price">$3,999</div>
+
+<p>
+Affordable vacant land ideal for long-term investment, recreation, or future development.
+</p>
+
+<a href="https://tally.so/r/zxzYk0" target="_blank" class="cta-button">
+Get Land Information
+</a>
+
+</div>
+</div>
+
+<div class="property-card">
+<img src="land2.png" alt="Wooded land property" class="property-img">
+
+<div class="property-content">
+<div class="property-title">Wooded Land Parcel</div>
+
+<div class="property-price">$4,500</div>
+
+<p>
+Beautiful natural land with road access. A great opportunity for investors and outdoor enthusiasts.
+</p>
+
+<a href="https://tally.so/r/zxzYk0" target="_blank" class="cta-button">
+Get Land Information
+</a>
+
+</div>
+</div>
+
+<div class="property-card">
+<img src="land3.png" alt="Investment land opportunity" class="property-img">
+
+<div class="property-content">
+<div class="property-title">Prime Investment Property</div>
+
+<div class="property-price">$4,500</div>
+
+<p>
+Secure your future with this affordable land investment opportunity in the United States.
+</p>
+
+<a href="https://tally.so/r/zxzYk0" target="_blank" class="cta-button">
+Get Land Information
+</a>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>© 2025 Holdings 4 Land | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
